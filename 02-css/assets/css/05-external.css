@@ -1,0 +1,29 @@
+
+
+/* Tüm html elemanlarını seçmek için * işareti kullanılır.  */
+*{
+    color: brown;     
+}
+
+
+/*  ***HEADER**   sadece h1 taginin özelliklerini degistrdim */
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color:blue
+}
+
+/*  html dosyamiza span icine  <span class="aaa">  yaziyoruz burdada .aaa diyerek o classi tanimliyoruz */
+.aaa{
+    font: size 1.3rem;
+  
+    background-color:green;
+    color:darkblue;
+
+}
+
+/* .  koyarak class ismini yazariz bizim html dosyamizdaki koydugumuz ismi yazariz sadece orayi tanimlamis oluruz */
+.bbb{
+
+    font-weight: bold;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elemanlari</title>
+</head>
+<body>
+                                                              
+    <form action="">                                           <!--  minlength="" maxlength="" Mesela ism enz 2 encok 10 karaktr olsun m -->
+    <input type="text" name="ad" id="ad" minlength="2" maxlength="30"> <br>
+
+    <input type="number" name="yas" id="yas"> <br>              <!-- sadece numara girebilirsiniz -->
+
+    <input type="email" name="eposta" id="eposta" required> <br> <!-- REQUIRed yazilmasini zorunlu hale getirir mesela artik eposta zorunlu -->
+
+    <input type="password" name="sifre" id="sifre"> <br>        <!-- sadece yazilan yaziyi sifreyi gizler -->
+
+    <input type="search" name="q" id="q"> <br> 
+
+    <input type="url" name="site" id="site"> <br>               <!-- Kutucugun sag ust kisminda silmek icin x olusur -->
+
+    <input type="tel" name="telefon" id="telefon"><br>
+
+    <input type="hidden" name="id" value="456">                 <!-- bu hidden oldugu icin gozukmez arka planda dir. Ama backend cinin gormesi gereken bilgiler -->
+
+
+    <!-- "checkbox" sayesinde cok fazla secenek tiklayabilriz hoby vs icin kullanilir  -->
+    <input type="checkbox" name="futbol" id="futbol"><label for="futbol">futbol</label>
+    <input type="checkbox" name="muzik" id="futbol"><label for="muzik">muzik</label>
+    <input type="checkbox" name="kayak" id="futbol"><label for="kayak">kayak</label>
+    <br>
+
+
+    <!-- radio   sadece tek sececk secer   erkek yada bayan -->
+        <input type="radio" name="cinsiyet" id="cinsiyetE"><label for="cinsiyetE">Erkek</label>
+        <input type="radio" name="cinsiyet" id="cinsiyetK"><label for="cinsiyetK">Kadın</label>
+        <br>
+
+        <label for="profil">PRofil foto seç</label>
+        <input type="file" name="profil" id="profil"> <!-- fotograf secmek icin type="file" name="profil" id="profil"kullanilir -->
+        <br>
+
+
+        <input type="color" name="profilRengi" id="profilRengi">
+        <br>
+
+        <input type="range" name="" id="">
+        <br><br>
+
+
+        <input type="date" name="dogum" id="dogum"><br>            <!-- kullaniciya tarih girdirir  dogum yili gibi -->
+        <input type="time" name="baslangic" id="baslangic"> <br>   <!-- kullaniciya saat sectirebiliriz  -->
+        <input type="datetime" name="is" id="is">  <br>            <!-- kullaniciya ise baslama tarihi sectirebiliriz  -->
+        <input type="datetime-local" name="is2" id="is2">  <br>    <!-- kullanici hangi ulkeye gore saat secmek istiyorsa burdan ayarlar  -->
+        <input type="month" name="" id="">  <br>                   <!-- kullaniciya  ay ve yil sectirr -->
+        <input type="week" name="" id="">                          <!-- kullaniciya  hafta sectirr -->
+
+        <br> <br>
+
+        <!-- SELECT bir cok secenek arasindan istedigimi seceriz il secmek gibi, size ile ekranda kac sehir gorunmesine istiyorsak onu gireriz -->
+        <select name="sahir" id="sehir" size="3" multiple> <!-- multiple ctr ile 2 tane birden secmemizi saglar -->
+            <option>Seciniz</option>
+            <option value="1">Adana</option>
+            <option value="2">Antalya</option>
+            <option value="2">Adiyaman</option>
+            <option value="2">Ankara</option>
+
+        </select>
+        <br>
+
+        <!-- bir kutucuk olusturur uzun bir metin girebiliriz -->
+        <textarea name="ozgecmis" id="ozgecmis" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="GONDER">       <!--  belirledigimiz yontemle formdaki tum bilgi alinir form method ile get put yardimi ile gonderilir -->
+                                                   <!-- backende gondermek icin form method="post" action="users/update" yazmaliyiz -->
+</form>
+</body>
+</html>
+
+
+
