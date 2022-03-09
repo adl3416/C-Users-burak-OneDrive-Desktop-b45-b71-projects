@@ -1,0 +1,23 @@
+
+/* eskiden bu yazi fonu kullanilirdi ama baska bilgisayarda olmassa sorun oluyor diye direk internet sitesinden kullaniliyor https://fonts.google.com/ */
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+nav.menu{
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    width:300px;
+}
+
+.active{
+    background-color: rgb(82, 82, 82);
+    color:white;
+}
+
+a.link{
+    color:black;
+    text-decoration: none;
+}
+
+
