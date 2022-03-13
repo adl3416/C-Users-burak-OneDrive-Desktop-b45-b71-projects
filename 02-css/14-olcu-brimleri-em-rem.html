@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM</title>
+    <style>
+
+/* bir elemanin font degerini(birimini) em  cinsinden belirlerseniz parent e gore ayarlar.  */
+
+        html{
+            font-size: 1rem;
+        }
+        body {
+            font-size: 3em;
+        }
+        .kutu1{
+            font-size: 2em;     /* Bulundugu kutuya gore 2 em ise 2katina cikartir */
+        }
+        .kutu2{
+            font-size: 2em;     /* mesela bu em oldugu icin kendini parent ine yani kutu 1 e gore ayarlar */
+        }
+
+        .kutu3{
+            font-size: 2rem;     /* sadece en paretn e bakar mesela en yukarda html varsa onu 2em yaparsak hepsi kendini 2 katina cikartir */
+        }
+        .kutu4{
+            font-size: 2rem;     /* buda sadece burda  html ye bakar */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kutu1">
+        <b> Merhaba</b>
+        <div class="kutu2"> 
+             <em>Dunya</em>   <!-- birim em ile bunun bir ilgisi yok farkli seyler --> 
+        </div>
+    </div>
+
+    <div class="kutu3">
+        <b> Kutu3</b>
+        <div class="kutu4"> 
+             <em>Kutu4</em>   
+        </div>
+    </div>
+    Test
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+:root{
+    --color1: rgb(243, 169, 169);
+    --color2: rgb(168, 10, 10);
+}
+nav.menu ul li{
+   display: inline-block;   /*  menuler normlade alt alt idi bunu yazinca yan yana oldu */
+}
+nav.menu ul{
+    list-style: none;
+    padding: 0;
+}
+nav.menu a{
+    background-color: var(--color1);
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color2);
+    width:5rem;
+    text-align: center;
+    margin-right:1rem;
+}
+nav.menu .active,  /* iki side ayni ozeliklere sahipse bu sekilde yazabiliirz */
+nav.menu a:hover{
+    background-color: var(--color2); /*  arka fon maus uzerine gelince gri olucak */
+    color:white;        /*  icindeki yazi maus uzerine gelince beyaz olucak */
+}
