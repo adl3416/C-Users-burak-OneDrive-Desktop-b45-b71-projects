@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .menu li{
+            display: inline-block;
+        }
+
+        .menu a{
+            padding-right: 3rem;
+        }
+        .menu li:first-child{           /* menunin icinde li  lerden ilk cocugu sec diyoruz sadece ilk li nin rengi degisir */
+            background-color: blueviolet
+        }
+
+        .menu li:last-child{ 
+            background-color:rgb(49, 219, 19);
+        }
+
+        .menu li:last-child { 
+            color: red;
+        }
+
+        .menu li:nth-child(3){          /* nth-child(3) ile sayi verdigimiz yeri degistirirz */
+            background-color:yellow;
+        }
+
+
+        .tablo{
+            background-color:rgb(253, 218, 218);
+            width:100%;
+        }
+
+        .tablo tr:nth-child(odd){      /*  tr:nth-child(odd): tr nin icinde tek(odd) olanlari istiyorum diyoruz, cift icin even diyrz  */
+ 
+            background-color:blueviolet;
+        }
+
+        .menu li::after{  /* ::after Bir elementin hemen    sonrasına bir içerik ve bu içeriğe stil eklemek için kullanılır */
+            content: " * ";
+            color: red;
+        }
+
+        .test{
+            background-color: red;
+        }
+
+        .test::before{
+            content: "XXX";
+            display: block;
+        }
+
+
+    </style>
+
+    
+
+
+
+</head>
+<body>
+
+    <span class="test">TEST</span>
+    
+    <ul class="menu">
+        <li class=""><a href="">link1</a></li>
+        <li><a href="">link2</a></li>
+        <li><a href="">link3</a></li>
+        <li><a href="">link4</a></li>
+        <li><a href="">link5</a></li>
+    </ul>
+
+    <table class="tablo"> 
+        <tbody>
+            <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
 }
 
 nav{
-  display: inline-block;
+  display: inline-block;  /*  nav in da inlene block yapiyoruz ve heryeri kaplamiyor */
 }
 
 nav.menu ul li{
@@ -14,18 +14,18 @@ nav.menu ul li{
 nav.menu input{
     width:7rem;
     padding: 0.5rem 1rem;
-    display: inline-block;
+    display: inline-block;  
 }
 
-nav.menu:hover ul{
-    display: block;
+nav.menu:hover ul{      /*  menuye  hover olunca calisir cunku input un icinde ul yok. ul menu nun icinde */
+    display: block;   /*  maus urunler Button un uzerine gelince tum menu gozukcek  */
 }
 
 nav.menu ul{
     list-style: none;
     padding: 0;
     margin:0;
-    display: none;
+    display: none;   /*  none ile menuyu gizledik (ul yi gizledik) */
 }
 
 nav.menu a{
