@@ -1,0 +1,22 @@
+.kutu{
+    background-color: chocolate;
+    height: 100vh;
+}
+
+.btn{
+    background-color: blue;
+    color:white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    
+    margin-bottom: 1rem;
+}
+
+#anahtar{
+    display:none; /*  tik yerini gizledik yaziya tiklayinca da calisiyor */
+}
+
+
+#anahtar:checked + .kutu{
+    background-color: blueviolet;
+}

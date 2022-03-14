@@ -1,3 +1,8 @@
+:root{
+    --color1: rgb(197, 169, 243);
+    --color2: rgb(168, 10, 10);
+}
+
 nav.menu{
     background-color: rgb(196, 137, 11);
     text-align: center;
@@ -21,9 +26,15 @@ nav.menu li:last-child::after{
 }
 
 nav.menu ul::before{
-    content: "<";
+    content: "◀️";
 }
 
 nav.menu ul::after{
-    content: ">";
+    content: "▶️";
 }
+
+nav.menu a:hover{
+    background-color: var(--color2);
+    color:white;
+}
+
