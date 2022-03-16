@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
+
+
+
+    <style>
+
+        .gri{
+            background-color:rgb(102, 99, 99);
+            color:white;
+        }
+        .top{
+            text-align: right;
+        }
+
+        .g{
+            background-color:rgb(214, 207, 207);
+        }
+
+        a::after{
+            content: "<i class="fa-solid fa-turkish-lira-sign"></i>"
+        }
+
+        .container {
+          
+                background-color: gray;
+                padding:1rem;
+                
+        }
+
+        .alis::after{
+            content: "<i class="fa-solid fa-turkish-lira-sign"></i>"
+        }
+
+       
+        
+        
+        nav.menu li{
+        display: inline-block;
+        }  
+
+           .alis{
+            background-color:rgb(240, 94, 94);
+            height: 30px;
+            width:192px;
+            color: white;
+            text-align: center;
+            padding:0.2rem;
+        }
+
+        .odeme{
+            background-color:rgb(240, 94, 94);
+            height: 30px;
+            width:192px;
+            color:white;
+            text-align:center;
+            padding:0.2rem;
+        }
+
+
+       
+
+    </style>
+
+    
+</head>
+<body>
+
+   
+
+    <table border="1" with="500">
+
+        <tr  class="gri">
+            
+            <th>Ürün Kodu</th>
+            <th>Ürün Adi</th>
+            <th>Miktar</th>
+            <th>Birim Fiyat</th>
+            <th>Ara Toplam</th>
+            <th> </th>
+        </tr>
+
+        <tr  class="not g">
+            <td>154654</td>
+            <td>Notebok</td>
+            <td>1</td>
+            <td> 5400 ₺  </td>
+            <td><span> 5400 ₺ </span></td>
+            <th> <i class="fa-solid fa-pen-to-square"></i>  <i class="fa-solid fa-trash-can"></i></th>
+        </tr>
+        <tr>
+            <td>456466</td>
+            <td>Klavye</td>
+            <td>2</td>
+            <td>80 ₺</td>
+            <td>160 ₺</td>
+            <th> <i class="fa-solid fa-pen-to-square"></i>  <i class="fa-solid fa-trash-can"></i></th>
+        </tr>
+        <tr class="mon g">
+            <td>564464</td>
+            <td>Monitor</td>
+            <td>1</td>
+            <td>700 ₺</td>
+            <td>700 ₺</td>
+            <th> <i class="fa-solid fa-pen-to-square"></i>  <i class="fa-solid fa-trash-can"></i></th>
+        </tr>
+        <tr>
+            <td>123598</td>
+            <td>Mause</td>
+            <td>1</td>
+            <td>700 ₺</td>
+            <td>50 ₺</td>
+            <th> <i class="fa-solid fa-pen-to-square"></i>  <i class="fa-solid fa-trash-can"></i></th>
+        </tr>
+        <tr  class="play g">
+            <td>613448</td>
+            <td>PlayStation</td>
+            <td>1</td>
+            <td>2.500 ₺</td>
+            <td>2.500 ₺</td>
+            <th> <i class="fa-solid fa-pen-to-square"></i>  <i class="fa-solid fa-trash-can"></i></th>
+        </tr>
+        <tr >
+            <td>789799</td>
+            <td>Usb Bellek</td>
+            <td>3</td>
+            <td>120 ₺</td>
+            <td>360 ₺</td>
+            <th> <i class="fa-solid fa-pen-to-square"></i>  <i class="fa-solid fa-trash-can"></i></th>
+        </tr>
+
+        <tfoot>
+            <tr class="gri top">
+                <th colspan="4"> TOPLAM</th>
+                
+                <th>9200</th>
+                <th></th>
+            </tr>
+        </tfoot>
+
+       
+
+    </table>
+
+    <nav class="menu">
+        <ul>
+            <li class="alis"> <a href="#">  <i class="fa-solid fa-cart-shopping"></i> <em>    Alisverise Devam</em></a> </li>
+            <li class="odeme"> <a href="#">  <em> Ödemeye Gec </em> <i class="fa-solid fa-credit-card"></i> </a></li>
+            
+        </ul>
+    </nav>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+         width: 600px;
+         background-color: gray;
+
+        }
+
+
+        .kutu{
+            width:300px;
+            border:10px solid red;
+            padding:20px;
+            display: inline-block;
+            box-sizing: border-box;  /*  verdigimiz  width:300px; un icinde padding ve border ama mapping dahil degil */
+                                     /*  box-sizing: border-box;  eger bunu yazmassak width:300px;   uzerine paddin margin ve border i eklemeliyiz   */
+
+
+
+        }
+
+
+        /* Zemin foto ekleme */
+        .bg{
+            background-image: url(https://www.vargonen.com/blog/wp-content/uploads/2020/04/yazilim-nedir.jpg);
+            height: 200px;
+            width:200px;
+            background-repeat: repeat-y;
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="kutu">Merhaba</div>
+        <div class="kutu">Merhaba</div>
+    </div>
+    <div class="bg">
+        
+    </div>
+    
+</body>
+</html>
