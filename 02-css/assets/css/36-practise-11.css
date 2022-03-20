@@ -1,0 +1,91 @@
+:root{
+    --color1: #eeb439;
+    --color2: #602c44;
+    --color3: #d19fb8;
+  }
+
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+
+  main{
+      padding-left: 50px; /*  admin yazisi altta kalmisti onu ortaya cikardik */
+  }
+
+  main header {
+      background-color: var(--color3);
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+  }
+
+  main section {
+      padding: 2rem;
+  }
+
+  .sol-menu{
+    background-color: var(--color1);
+    width: 250px;
+    height:100vh;                      /* asagı dogru komple sarı arkaplan oldu */
+    position: absolute;
+    left: -200px;                     /* solo gitti kayboldu  gizledik*/
+    top:0;                             /*  menu yukari cikcak admin yazisi gozukmicek */
+    transition: left 1s;               /*  yavasca acilmasini saglar */
+ 
+}
+
+.sol-menu ul{
+    list-style: none;
+    padding: 0;
+    margin:2rem 0; /*  admin menu ile ana sayfa arasini actik */
+
+
+}
+
+.sol-menu a{
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    color: var(--color2);
+    position: relative;
+
+}
+
+.sol-menu a:hover::before{
+    font: var(--fa-font-solid) ;  /* solid  iconu kullnmak icin yamaliyiz  */
+    position: absolute;  /* x yazilari(anasayfa vs)  kaydirmadan uzerinde belli olur bu nedenle solas yanastirayoruz right:0*/ 
+    left:1;
+  
+    content: "\f0da"  /* https://fontawesome.com/     uzerine geldigimizde ok isareti cikacak */
+
+}
+
+.sol-menu .title{
+    display:flex;
+    justify-content:space-between; /* menudeki ok en sag a kaydi */
+    font-size: 1.5rem;
+    background-color: var(--color2);
+    padding: 0.5rem 1rem;
+    color: white;
+    
+}
+
+.sol-menu .title label{
+    cursor: pointer; /*  menunnun sagindaki ok a maus gitttiginde el isareti cikiyor */
+    transition: transform 0.3s linear 0.3s;  /*  ok isareti yavasca donecek */
+}
+
+#switch{
+    display:none; /* check kutusu gizlendi */
+
+}
+
+#switch:checked + .sol-menu{  /*  switch isaretli iken + .sol-menu yani kendinden sonraki sol menuyu secicek, onu left-250 ile gizledik burdada 0 yapariz gelir */
+    left:0;
+}
+
+#switch:checked + .sol-menu .title label{
+    transform: rotate(180deg);    /*  admin menudeki ok isareti menu acilinca saga kapaninca sola bakar */
+}
