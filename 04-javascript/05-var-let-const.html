@@ -13,8 +13,29 @@
         var y;
         const z=4;   /* sabit(const) tanimlarken mutlaka ilk deger atanmali */
 
-        console.log(x,y,z);
+        console.log(x,y,z);  //5 undefined 4
 
+        var adi="ali";
+        console.log(adi); //ali
+
+
+        let enBuyukTamsayi = Number.MAX_SAFE_INTEGER;
+        console.log(enBuyukTamsayi);    //9007199254740991
+        console.log(enBuyukTamsayi-5==enBuyukTamsayi-5);  //true
+
+        var testTamsayi= 900719925474099198789876n;
+        console.log(testTamsayi+5n == testTamsayi+6n);  //false
+
+        var tanimsiz;
+        console.log(tanimsiz);   // undefined
+
+        var x=null;
+        console.log(x);  //null
+
+        console.log(typeof(testTamsayi)); // typeof : degiskenin tipini sonuc olarak verir. Bunun datasi "bigint"  dir
+        console.log(typeof(x));           // typeof :object
+        console.log(typeof(adi));         // typeof :string
+        console.log(typeof(tanimsiz));    // typeof :undefined
 
 
     </script>

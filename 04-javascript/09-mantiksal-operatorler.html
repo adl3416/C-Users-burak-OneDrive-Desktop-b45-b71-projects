@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let x = 50;
+        let y= 40;
+        let z = 10;
+        //  ==(ikiesittir): sadece deger karsilastirr ama === hemdeger hem veri tipi krsilastirr
+         console.log(x==50);     // x 50 ye esitmi --> truetype
+         console.log(x=="50");   // true  number 50 ile string 50 karsilastrdi ayni, ama tipine bakmaz
+         console.log(x===50);    // true  burda sadece tipine bakiyor   Number
+         console.log(x==="50"); // burda hem degeri hemde tipi data tipini kontrol ediyor bu nedenle FALSE degerler esit data tipleri farkli
+         console.log(x===50n);  //false
+
+         console.log(x>y);   //true
+
+    </script>
+    
+</body>
+</html>
