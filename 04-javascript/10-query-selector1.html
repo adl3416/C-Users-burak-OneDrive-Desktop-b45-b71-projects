@@ -35,12 +35,16 @@
 
      console.log(cont.innerText);
 
-        cont.innerText = "<b>Merhaba Dünya</b>"; // burda sadec biz ne yazarsak aynisini yazar
-        cont.innerHTML = "<em>Merhaba Dünya</em>";
+        cont.innerText = "<b>Merhaba Dünya</b>"; // burda sadece biz ne yazarsak aynisini yazar
+        cont.innerHTML = "<em>Merhaba Dünya</em>";  //burda html kodlari islevini yapar
 
 
         cont = document.querySelectorAll(".d-none");
         console.log(cont);
+
+       let isim = document.querySelector(".name").textContent;
+       console.log(isim);
+       document.querySelector(".mesaj").innerHTML = `Merhaba <b>${isim}</b>`;
 
     </script>
 
