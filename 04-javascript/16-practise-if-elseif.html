@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         <!-- kullanici bir deger girsin 500 den buyukse 10% degilse 5% indirm yapsin -->
+    <input type="number" name="" id="txtFiyat">
+    <button id="btnHesapla" onclick="hesapla()">  Hesapla</button> <!--  onclick oldugunda yani calistiginda hesaplayi cagir dedik -->
+
+    <div id="lblSonuc"></div>
+
+    <script>
+        function hesapla(){
+            let fiyat =document.querySelector("#txtFiyat").value;
+
+            if(fiyat>500){
+                fiyat=fiyat - fiyat*10/100;
+            }
+
+            else if(fiyat>300){
+                fiyat=fiyat - fiyat*7/100;
+            }
+            
+            else {
+                fiyat=fiyat - fiyat*5/100;
+            }
+            document.querySelector("#lblSonuc").innerText =fiyat;
+        }
+       
+
+    </script>
+    
+</body>
+</html>
