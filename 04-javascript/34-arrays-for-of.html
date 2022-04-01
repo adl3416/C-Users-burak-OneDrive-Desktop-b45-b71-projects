@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        const students= ["Ahmet","Can","Mustafa","Ayse","Elif"];  // bular alt alta 
+
+        let birlesik="";
+
+        for(let student of students){
+            birlesik += student;            /* dizideki elemanlari students den student (tekil ve yeni olusturdum) e  atsin dedik */
+        }
+
+        console.log(birlesik);  //AhmetCanMustafaAyseElif   hpsini birlestirdi
+
+        for(let harf of "Ali Gel"){
+        console.log(harf);
+}
+
+
+        for(let [index,student] of students.entries()){     //entries: hem indexleri hemde degerleri alsin dedik. [index (indexi buraya),student (degeri buraya)]
+            console.log(`${index+1} .eleman  ${student}`);
+
+
+        }
+
+        for(let harf2 in "Ali Git"){
+       console.log(harf2);
+       }
+
+
+                                              
+    </script>
+    
+</body>
+</html>
