@@ -32,6 +32,18 @@
         console.log(`Son çarpım=${soncarpim}`);
 
 
+
+         /*ORNEK: bir firma 3000 den az olan maaslara %10 zam yapmak istiyor ve bu kisilere odennn miktari gosteren prog yaziniz*/
+
+         const maaslar = [12,15,8,20,25,14,12,10,7,10];
+         
+         maaslar.filter(m=> m<=15)
+         .map(m=> m*1.2)
+         .reduce( (toplam, m) => toplam+m,0);
+
+         console.log(top)
+
+
     </script>
     
 </body>

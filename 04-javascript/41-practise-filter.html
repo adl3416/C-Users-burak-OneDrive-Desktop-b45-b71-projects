@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-   <style>
+    <style>
         #tblCountries tbody tr{
             cursor: pointer;
         }
@@ -20,7 +20,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <div id="countryDetail" class="card sticky-top">
             
         </div>
 
@@ -38,10 +38,17 @@
             <tbody>
                 
             </tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th class="totalArea"></th>
+                    <th></th>
+                </tr>
+            </tfoot>
         </table>
     </div>
     
-
 
     <script type="module" src="assets/js/41-practise-filter.js"></script>
 </body>
