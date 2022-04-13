@@ -23,4 +23,4 @@ const nSortDesc = (arr) => {
     return arr.sort( (a,b) => b-a);
 }
 
-export {sSortAsc, sSortDesc, nSortAsc, nSortDesc}
+export {sSortAsc, sSortDesc, nSortAsc, nSortDesc}    /* bu 4 foksiyonu disari actik */
