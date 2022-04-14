@@ -1,11 +1,28 @@
 
-const searchShow = (show, cb) => { 
-    fetch(`https://api.tvmaze.com/search/shows?q=${show}`)      /* burda endpointe baglaniyoruz */
-    .then(resp=> resp.json())                               /* burda cevabi karsiliyoruz  cevabijson a gonderiyo oda log dayata gonderiyor*/
-    .then(data=>{
-        cb(data);
+const apiURL = "https://api.tvmaze.com";
+
+const searchShow = (show, cb) => {
+  fetch(`${apiURL}/search/shows?q=${show}`)         /* burda cevabi karsiliyoruz  cevabijson a gonderiyo oda log dayata gonderiyor*/
+    .then((resp) => resp.json())
+    .then((data) => {
+      cb(data);
     });
-}
+};
 
-export {searchShow}
+const getShow = (id, cb) => {
+  fetch(`${apiURL}/shows/${id}`)
+    .then((resp) => resp.json())
+    .then((data) => {
+      cb(data);
+    });
+};
 
+const getEpisodes = (id, cb) => {
+  fetch(`${apiURL}/shows/${id}/episodes`)
+    .then((resp) => resp.json())
+    .then((data) => {
+      cb(data);
+    });
+};
+
+export { searchShow, getShow, getEpisodes };
