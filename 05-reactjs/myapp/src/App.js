@@ -1,4 +1,5 @@
 import HelloWorld from "./components/01-hello-world";
+import Comp from './components/02-comp';
 
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div className="App">   
      Bu benim ilk dosyam
      <HelloWorld/> 
+     <Comp/>
     </div>
   );
 }

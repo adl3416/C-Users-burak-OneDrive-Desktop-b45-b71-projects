@@ -1,7 +1,11 @@
+import Comp from './02-comp'
+
 const HelloWorld = () => {
 
     return(
-        <div> Hello World</div>
+        <div> HelloWorld
+            <Comp/>
+        </div>
     )
 
 }
