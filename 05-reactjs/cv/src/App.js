@@ -5,6 +5,7 @@ import Slider from './components/slider/slider';
 import Intro from './components/intro/intro';
 import Abaut from './components/abaut/abaut';
 import Quote from './components/quote/quote';
+import Skills from './components/skills/skills';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Intro/>
       <Abaut/>
       <Quote/>
+      <Skills/>
     </>
   );
 }
