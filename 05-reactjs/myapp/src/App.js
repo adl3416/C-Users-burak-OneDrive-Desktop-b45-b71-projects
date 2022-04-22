@@ -9,6 +9,12 @@ import JsxLoop from "./components/05-jsx-loop";
 import JsxPractise from "./components/06-jsx-practise";
 import StyleInline from "./components/07-style-inline";
 import StyleInternal from './components/08-style-internal'
+import StyleExternal from "./components/09-style-external";
+import Clock1 from   "./components/10-clock1"
+import Props from "./components/11-props"
+import Props2 from "./components/12-clock2"
+import Image from "./components/13-image";
+import ImagePractise from "./components/14-image-practise";
 
 
 
@@ -23,10 +29,24 @@ const App = () => {
       <JsxLoop/>
       <JsxPractise/>
       <StyleInline/>
+      <StyleInternal/>
+      <StyleExternal/>
+       <Clock1/>
+       <Props ad="Medinem" yas= "33"/>
+        <Clock2 color="red" bgColor="gray"/>
+    <Clock2 color="yellow" bgColor="navy"/>
+    <Clock2/>
+    <Image/>
+       
  */}    
+
+      <ImagePractise/>
+      
+    
+   
+    
     
   
-  <StyleInternal/>
  </div>
   );
 }
