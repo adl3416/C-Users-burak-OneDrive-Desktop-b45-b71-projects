@@ -1,8 +1,9 @@
 import React from "react";
+
 const Experince = (props) => {
     console.log(props);
   return (
-    <div className="col-sm-6 timeline-item">
+    <div className={`${props.position=="right" && props.alone && "col-sm-offset-6" } col-sm-6 timeline-item`}>
       <div className="row">
         <div className={`${props.position == "right" && "col-sm-offset-1"} col-sm-11`}>
           <div className={`timeline-panel ${props.position == "right" ? "debits" : "credits"} `}>
@@ -27,4 +28,5 @@ const Experince = (props) => {
     </div>
   );
 };
+
 export default Experince;
