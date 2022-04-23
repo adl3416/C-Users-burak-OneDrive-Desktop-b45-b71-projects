@@ -1,10 +1,9 @@
 import HelloWorld from "./components/01-hello-world";
 import Comp from './components/02-comp';
 
-/* 
  import Jsx, {test1, test2} from "./components/03-jsx";
 import Jsx2 from "./components/04-jsx-2";
-*/
+
 import JsxLoop from "./components/05-jsx-loop";
 import JsxPractise from "./components/06-jsx-practise";
 import StyleInline from "./components/07-style-inline";
@@ -15,6 +14,9 @@ import Props from "./components/11-props"
 import Props2 from "./components/12-clock2"
 import Image from "./components/13-image";
 import ImagePractise from "./components/14-image-practise";
+import ProfileCard from "./components/15-profile-card";
+
+import Shop from "./components/18-bootstrap-practise/shop";
 
 
 
@@ -37,10 +39,13 @@ const App = () => {
     <Clock2 color="yellow" bgColor="navy"/>
     <Clock2/>
     <Image/>
+    <ImagePractise/>
        
- */}    
+ */}   
 
-      <ImagePractise/>
+   <Shop/>
+
+      
       
     
    
