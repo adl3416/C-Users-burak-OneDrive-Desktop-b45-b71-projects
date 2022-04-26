@@ -15,6 +15,7 @@ import Props2 from "./components/12-clock2"
 import Image from "./components/13-image";
 import ImagePractise from "./components/14-image-practise";
 import ProfileCard from "./components/15-profile-card";
+import BootstrapStatic from "./components/16-bootstrap-static";
 
 import Shop from "./components/18-bootstrap-practise/shop";
 
@@ -40,10 +41,20 @@ const App = () => {
     <Clock2/>
     <Image/>
     <ImagePractise/>
-       
+       <Shop/>
+        <ProfileCard 
+      name="Ali Gel" 
+      location="İstanbul, Türkiye" 
+      avatar="profile.jpg" 
+      shot="4" 
+      followers="4523" 
+      followings="50"/>
  */}   
+          <BootstrapStatic/>
 
-   <Shop/>
+  
+
+   
 
       
       

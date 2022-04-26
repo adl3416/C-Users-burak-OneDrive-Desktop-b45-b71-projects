@@ -1,15 +1,18 @@
 import React from "react";
 import "../assets/css/15-profile-card.css";
 
-const ProfileCard = (props) => {
-  const img = require(`../assets/img/${props.avatar}`);
+const ProfileCard = (props) => { 
 
-  const profileBg = { backgroundImage: `url(${img})` };
+  const img = require(`../assets/img/${props.avatar}`); /*  resim src icinde oldugu icin  require yapmaliyiz */
+
+  console.log(img);
+
+  const profileBg = { backgroundImage: `url(${img})` };      /* resmi css koyamayiz bu nedenle buraya  koyuyoruz */
 
   return (
     <div className="profile-card">
       <div className="profile-bg" style={profileBg}>
-          <div className="profile-transparent"></div>
+          <div className="profile-transparent"></div>       {/*  */}
       </div>
       <div className="profile-content">
         <div className="profile-avatar">
@@ -23,10 +26,13 @@ const ProfileCard = (props) => {
             {props.shot}
             <span>Shot</span>
           </div>
+
           <div>
             {props.followers}
             <span>Followers</span>
           </div>
+
+
           <div>
             {props.followings}
             <span>Followings</span>

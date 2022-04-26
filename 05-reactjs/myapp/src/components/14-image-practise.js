@@ -15,7 +15,7 @@ const ImagePractise = () => {
     <>
 
     {
-           data.map(image=> <img src={require(`../assets/img/${image}`)}/>)
+          data.map( (image, index)=> <img key={index} src={require(`../assets/img/${image}`)}/>)
     }
     </> 
  

@@ -8,31 +8,31 @@
 
 .profile-bg{
     height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat;      /*  arka plan tekrari engellendi */
+    background-size: cover;            /* resmi cerceveye tam oturtuyor */
     background-position: center center;
     border-radius: 1rem 1rem 0 0;
     position: relative;
 }
 
 .profile-transparent{
-    background-color: rgba(125, 6, 6, 0.616);
-    position: absolute;
-    top:0; left:0; right:0; bottom:0;
+    background-color: rgba(125, 6, 6, 0.397);
+    position: absolute;                          /* tam olarak kapsamasi ve gozukmesi icin absolute; ve bg de  position: relative; yapilir  */
+    top:0; left:0; right:0; bottom:0;    /* kendini her koseye sifirlayip bulundugu katmanda ´genisliyo */
     border-radius: 1rem 1rem 0 0;
 }
 
 .profile-content{
     text-align:center;
-    top: -50px;
+    top: -50px;   /* yuvarlk resmi %50 yukari kaydrmak icin bunu ve  position: relative; yaptik */
     position: relative;
 }
 
 .profile-avatar img{
     width:100px;
     height:100px;
-    border-radius: 50%;
-    border:5px solid rgba(255, 255, 255, 0.283);
+    border-radius: 50%;   /*  */
+    border:5px solid rgba(255, 255, 255, 0.283);  /* kucuk resmin cercevesine bordex verdik */
 }
 
 .profile-card h3{
@@ -45,8 +45,8 @@
 }
 
 .profile-stats{
-    display: flex;
-    justify-content: space-around;
+    display: flex;   /* elemanlar yan yana geldi */
+    justify-content: space-around;  /* kenarlara alalim */
     margin-top:1rem;
 }
 
