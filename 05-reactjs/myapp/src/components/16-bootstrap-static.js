@@ -1,5 +1,5 @@
 import React from 'react'
-import { Alert } from 'react-bootstrap';
+import { Alert } from 'react-bootstrap';  /*  dinamik bootsrap icin bu importu yapmaliyiz */
 
 
 const BootstrapStatic = () => {

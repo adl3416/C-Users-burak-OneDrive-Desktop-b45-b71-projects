@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Card, Button } from "react-bootstrap";
 
-const Product = () => {
+const Product = (props) => {
+  const { title, price, desc, image } = props;
+
   return (
-    <div>P</div>
-  )
-}
+    <Card>
+      <Card.Img variant="top" src={require(`../../assets/img/products/${image}`)} />
+      <Card.Body className="text-center">
+        <Card.Title>{title}</Card.Title>
+        <Card.Text>{desc}</Card.Text>
+        <Card.Text>{"$"+price}</Card.Text>
+        <Button variant="warning">Add To Cart</Button>
+      </Card.Body>
+    </Card>
+  );
+};
 
 export default Product;

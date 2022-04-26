@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, FormControl, Form, NavDropdown, Nav, Container, Navbar } from 'react-bootstrap'
 const Header = () => {
+
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
     <Container>
@@ -31,4 +32,4 @@ const Header = () => {
   </Navbar>
   )
 }
-export default Header
+export default Header;
