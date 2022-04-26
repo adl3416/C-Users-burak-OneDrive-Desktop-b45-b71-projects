@@ -1,9 +1,7 @@
 import HelloWorld from "./components/01-hello-world";
 import Comp from './components/02-comp';
-
  import Jsx, {test1, test2} from "./components/03-jsx";
 import Jsx2 from "./components/04-jsx-2";
-
 import JsxLoop from "./components/05-jsx-loop";
 import JsxPractise from "./components/06-jsx-practise";
 import StyleInline from "./components/07-style-inline";
@@ -19,6 +17,10 @@ import BootstrapStatic from "./components/16-bootstrap-static";
 import BootstrapDinamik from "./components/17-bootstrap-dinamik";
 
 import Shop from "./components/18-bootstrap-practise/shop";
+import State from "./components/19-state";
+import Stateless from "./components/20-stateless";
+import Counter from "./components/21-counter";
+import Birthday from "./components/22-birthday/birthday";
 
 
 
@@ -52,19 +54,16 @@ const App = () => {
       followings="50"/>
        <BootstrapStatic/>
          <BootstrapDinamik/>
+          <Shop/>
+            <Stateless/>
+             <State/>
+              <Counter/>
  */}   
+
+  <Birthday/>
          
-        <Shop/>
-
-  
-
-   
-
+       
       
-      
-    
-   
-    
     
   
  </div>
