@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";  /* butun div leri impor yapiyoruz */
+import { Card, Col, Row } from "react-bootstrap";  /* butun div leri import yapiyoruz */
 const Person = ({ name, age, image }) => {
   return (
     <Card className="d-flex">
