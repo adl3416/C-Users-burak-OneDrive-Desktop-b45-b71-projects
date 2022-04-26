@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";  /* butun div leri impor yapiyoruz */
 const Person = ({ name, age, image }) => {
   return (
     <Card className="d-flex">
@@ -7,7 +7,7 @@ const Person = ({ name, age, image }) => {
         <Col md={4}>
           <Card.Img
             variant="top"
-            src={require(`../../assets/img/people/photo-01.jpg`)}
+            src={require(`../../assets/img/people/photo-01.jpg`)}  
           />
         </Col>
         <Col md={8}>
