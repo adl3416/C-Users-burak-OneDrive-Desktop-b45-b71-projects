@@ -7,10 +7,9 @@ const Counter = () => {
 
   const handleCount = (cnt) => {
     if(cnt<0 || cnt>100) return;
-    setCount(cnt);
-
-    
+    setCount(cnt); 
   }
+
   return (
     <ButtonGroup aria-label="Basic example">
       <Button variant="success" onClick={()=>handleCount(count+1)}>+</Button>
