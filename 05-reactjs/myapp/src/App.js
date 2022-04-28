@@ -22,6 +22,8 @@ import Stateless from "./components/20-stateless";
 import Counter from "./components/21-counter";
 import Practise from "./components/21-practise";
 import Birthday from "./components/22-birthday/birthday";
+import UseEffect from "./components/22-useEffect";
+import Clock3 from "./components/23-clock-3";
 
 
 
@@ -61,10 +63,14 @@ const App = () => {
               <Counter/>
               
                <Practise/>
+               <Birthday/>
+                <UseEffect/>
   
  */}   
 
-         <Birthday/>
+         
+        
+         <Clock3/>
 
       
      
