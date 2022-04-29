@@ -1,19 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Card, Container, Button } from "react-bootstrap";
 
-const RandomImage = () => {
+const RandomImage2 = () => {
   const [number, setNumber] = useState(1);
-  const [message, setMessage] = useState("");
-
-  let image = "image1.jpg";
-
-  if (number >= 8) {
-    image = "image1.jpg";
-  } else if (number >= 4) {
-    image = "image2.jpg";
-  } else {
-    image = "image3.jpg";
-  }
 
   const getRandomNumber = () => {
     // Math.random()*(ust-alt+1) + alt
@@ -24,7 +13,14 @@ const RandomImage = () => {
   return (
     <Container>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={require(`../assets/img/${image}`)} />
+        {number >= 7 ? (
+          <Card.Img variant="top" src={require("../assets/img/image1.jpg")} />
+        ) : number >= 4 ? (
+          <Card.Img variant="top" src={require("../assets/img/image2.jpg")} />
+        ) : (
+          <Card.Img variant="top" src={require("../assets/img/image3.jpg")} />
+        )}
+
         <Card.Body>
           <Card.Title>Random number: {number}</Card.Title>
           <Button variant="primary" onClick={getRandomNumber}>
@@ -36,4 +32,4 @@ const RandomImage = () => {
   );
 };
 
-export default RandomImage;
+export default RandomImage2;
