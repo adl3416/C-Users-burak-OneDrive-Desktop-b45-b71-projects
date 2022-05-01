@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Card, Container, Button } from "react-bootstrap";
 
+// 1 ile 10 arasinda rasrgele sayi tutacak hersayiya ait resim gozukcek
+
 const RandomImage = () => {
   const [number, setNumber] = useState(1);
   const [message, setMessage] = useState("");
 
   let image = "image1.jpg";
+
+  
 
   if (number >= 8) {
     image = "image1.jpg";
