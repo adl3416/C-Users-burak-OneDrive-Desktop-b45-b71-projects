@@ -13,7 +13,7 @@ const RandomImage2 = () => {
   return (
     <Container>
       <Card style={{ width: "18rem" }}>
-        {number >= 7 ? (                                                              /*  numbr buyuk esit 7 ise burayi calistir */
+        {number >= 7 ? (                                                              /*  number buyuk esit 7 ise burayi calistir */
           <Card.Img variant="top" src={require("../assets/img/image1.jpg")} />
         ) : number >= 4 ? (
           <Card.Img variant="top" src={require("../assets/img/image2.jpg")} />
