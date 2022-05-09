@@ -30,6 +30,8 @@ import RandomImage2 from "./components/26-random-image-2";
 import UserCards from "./components/27-usercards/user-cards";
 import Countries from "./components/28-countries/countries";
 import Form1 from "./components/29-forms/form1";
+import Form2 from "./components/29-forms/form2";
+import Form3 from "./components/29-forms/form3";
 
 
 
@@ -77,11 +79,14 @@ const App = () => {
                   <RandomImage2/>
                    <UserCards/>
                      <Countries/>
+                     <Form1/>
+                     <Form2/>
   
  */}   
          
+         <Form3/>
         
-          <Form1/>
+          
            
          
         
