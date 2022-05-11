@@ -24,7 +24,11 @@ const Form4 = () => {
     e.preventDefault();  /* mevvut default davranisini durdur ben bi kontrol edicem */
     setValidated(true);
 
-    if (e.target.checkValidity() === false) {
+
+    /* Submit fonksiyonu içinde bootstrap in checkValidity methodu ile formun validasyon
+    kontrolü yapılır. Eğer form doğrulanırsa True, değilse false döner. */
+    
+    if (e.target.checkValidity() === false) {    /* basarili olursa true oluyor  */
       return;
     }
 
@@ -46,7 +50,7 @@ const Form4 = () => {
         <Form.Group className="mb-3">
           <Form.Label>Ad</Form.Label>
           <Form.Control
-            required
+            required  /* mutlaka girilmeli */
             minLength={2}
             maxLength={25}
             name="firstName"

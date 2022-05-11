@@ -28,17 +28,17 @@ const Form5 = () => {
 
   return (
     <Container className="mt-5">
-      <Form noValidate onSubmit={formik.handleSubmit}>
+      <Form noValidate onSubmit={formik.handleSubmit}>  {/* handleSubmit  yazmaliyiz */}
         <Form.Group className="mb-3">
           <Form.Label>Email</Form.Label>
           <Form.Control
             type="email"
             {...formik.getFieldProps("email")}
-            isInvalid={formik.touched.email && !!formik.errors.email}
-            isValid={formik.touched.email && !formik.errors.email}
+            isInvalid={formik.touched.email && !!formik.errors.email} /*  hata varsa kirmizi yapar */
+            isValid={formik.touched.email && !formik.errors.email}     /* yesil yapar */
           />
           <Form.Control.Feedback type="invalid">
-            {formik.errors.email}
+            {formik.errors.email}  {/*  */}
           </Form.Control.Feedback>
         </Form.Group>
 
