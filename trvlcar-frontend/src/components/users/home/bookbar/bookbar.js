@@ -3,7 +3,7 @@ import "./bookbar.css"
 
 const BookBar = () => {
   return (
-    <div>bookbar</div>
+    <div>bo</div>
   )
 }
 
