@@ -9,3 +9,7 @@
   a{
     text-decoration: none;
   }
+  .btn-primary{
+    background-color: var(--colar1);
+    border-color: var(--colar1);
+  }
