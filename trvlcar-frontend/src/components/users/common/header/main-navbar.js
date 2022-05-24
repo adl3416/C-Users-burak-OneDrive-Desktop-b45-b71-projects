@@ -2,10 +2,14 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../../../../assets/img/logo/logo.png";
 import {RiHome3Line, RiCarLine, RiInformationLine, RiMapPinLine, RiUserLine} from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./main-navbar.css";
-const MainNavbar = () => {
 
+const MainNavbar = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  console.log(currentPath);
 
   return (
     <Navbar expand="lg" className="main-navbar" variant="dark">
@@ -16,17 +20,16 @@ const MainNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-
-            <Nav.Link as={Link} to="/" className="active"> {/* active: yesil fon */}
+            <Nav.Link as={Link} to="/" className={currentPath === "/" ? "active" : ""}>
               <RiHome3Line/> Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/vehicles">
+            <Nav.Link as={Link} to="/vehicles" className={currentPath === "/vehicles" ? "active" : ""}>
              <RiCarLine/> Cars
             </Nav.Link>
-            <Nav.Link as={Link} to="/about">
+            <Nav.Link as={Link} to="/about" className={currentPath === "/about" ? "active" : ""}>
               <RiInformationLine/> About
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact">
+            <Nav.Link as={Link} to="/contact" className={currentPath === "/contact" ? "active" : ""}>
               <RiMapPinLine/> Contact
             </Nav.Link>
             <Nav.Link as={Link} to="/auth">
@@ -38,4 +41,5 @@ const MainNavbar = () => {
     </Navbar>
   );
 };
+
 export default MainNavbar;
