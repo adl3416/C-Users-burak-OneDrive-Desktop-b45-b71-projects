@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./slider.css";
@@ -8,6 +7,7 @@ const Slider = () => {
   return (
     <Carousel fade className="slider">
       {slides.map((slide, index) => {
+
         let image = require(`../../../../assets/img/slider/${slide.image}`);
 
         return (

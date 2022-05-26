@@ -39,4 +39,5 @@ const SocialBar = () => {
     </ul>
   );
 };
+
 export default SocialBar;

@@ -1,5 +1,5 @@
 .page-header{
-    background-image: url("../../../../assets/img/page-header-bg.jpg");
+    background-image: url("../../../../assets/img/bg/page-header-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -19,3 +19,8 @@
     opacity:0.8;
 }
 
+.page-header h1{
+    position: relative;
+    z-index: 5;
+    font-size: 3rem;
+}

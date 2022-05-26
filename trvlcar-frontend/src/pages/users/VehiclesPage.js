@@ -9,4 +9,4 @@ const VehiclesPage = () => {
   )
 }
 
-export default VehiclesPage;
+export default VehiclesPage

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./section-header.css";
+
 const SectionHeader = ({title, desc}) => {
   return (
     <div className="section-header">
@@ -9,4 +10,5 @@ const SectionHeader = ({title, desc}) => {
     </div>
   )
 }
-export default SectionHeader;
+
+export default SectionHeader
